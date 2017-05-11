@@ -61,7 +61,7 @@ for area in  tabListDiv:
                                 offices_equipment = "暂无相关信息"
                         about_div = office_soup.find_all("div", class_="pr-in-cont")
                         for about_info in about_div:
-                            offices_about = str(about_info.p)
+                            offices_about = str(about_info)
                         diagnosis_div = office_soup.find_all("div", class_="pr-ra-cont")
                         for diagnosis_info in diagnosis_div:
                             offices_diagnosis_scope = str(diagnosis_info.p)
